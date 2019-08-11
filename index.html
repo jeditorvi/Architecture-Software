@@ -91,6 +91,17 @@
      <img src="img/portfolio/thumbnails/Lambda.jpg" alt="Arquitectura Lambda">
      </center>
       
+     <p class="Esta arquitectura se clasifica en tres capas:
+
+Capa por lotes: la capa por lotes calcula previamente el conjunto de datos maestro (es un componente central de la arquitectura lambda y contiene todos los datos) en vistas por lotes para que las consultas se puedan resolver con baja latencia.
+
+Capa de velocidad: en la capa de velocidad básicamente hacemos dos cosas: almacenar las vistas en tiempo real y procesar el flujo de datos entrantes para actualizar esas vistas. Llena el espacio delta que deja la capa de lote. Eso significa combinar la vista de capa de velocidad y el lote La vista nos da la capacidad de disparar cualquier consulta ad hoc sobre todos los datos que son query = function (sobre todos los datos) .
+
+Capa de servicio:  proporciona acceso de baja latencia a los resultados de los cálculos realizados en el conjunto de datos maestro. Combina la vista por lotes y la vista en tiempo real para dar resultado en tiempo real para cualquier consulta ad hoc sobre todos los datos.</p>
+     
+     
+     
+     
     </div>
   </section>
   
